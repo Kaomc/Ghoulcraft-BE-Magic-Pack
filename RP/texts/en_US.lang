@@ -1,0 +1,7 @@
+pack.name=[Magic] Ghoulcraft BE RP
+pack.description=
+tile.ghoulcraft:magicmirror_blue.name=Blue Magic Mirror
+tile.ghoulcraft:magicmirror_purple.name=Purple Magic Mirror
+
+entity.ghoulcraft:crow.name=Crow
+item.spawn_egg.entity.ghoulcraft:crow.name=Spawn Crow

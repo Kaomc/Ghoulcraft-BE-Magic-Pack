@@ -1,0 +1,46 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "ghoulcraft:crow",
+			"materials": {
+				"default": "parrot"
+			},
+			"textures": {
+				"blue": "textures/entity/crow/blue",
+				"green": "textures/entity/crow/green",
+				"red_blue": "textures/entity/crow/red_blue",
+				"yellow_blue": "textures/entity/crow/yellow_blue",
+				"grey": "textures/entity/crow/grey"
+			},
+			"geometry": {
+				"default": "geometry.crow"
+			},
+			"scripts": {
+				"pre_animation": ["variable.state=query.is_dancing?3:(query.is_sitting?2:(!query.is_on_ground&&!query.is_jumping&&!query.is_riding?0:1));", "variable.dance.x=Math.cos(query.life_time*57.3*20.0);", "variable.dance.y=-Math.sin(query.life_time*57.3*20.0);", "variable.wing_flap=((math.sin(query.wing_flap_position*57.3)+1)*query.wing_flap_speed);"]
+			},
+			"animations": {
+				"moving": "animation.crow.moving",
+				"base": "animation.crow.base",
+				"dance": "animation.crow.dance",
+				"sitting": "animation.crow.sitting",
+				"flying": "animation.crow.flying",
+				"standing": "animation.crow.standing",
+				"look_at_target": "animation.common.look_at_target"
+			},
+			"animation_controllers": [
+				{
+					"setup": "controller.animation.parrot.setup"
+				},
+				{
+					"move": "controller.animation.parrot.move"
+				}
+			],
+			"render_controllers": ["controller.render.parrot"],
+			"spawn_egg": {
+				"base_color": "#1d1f23",
+				"overlay_color": "#8ebde4"
+			}
+		}
+	}
+}

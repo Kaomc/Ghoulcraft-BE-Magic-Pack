@@ -1,0 +1,14 @@
+{
+	"num_mip_levels": 4,
+	"padding": 8,
+	"resource_pack_name": "[Magic] Ghoulcraft BE",
+	"texture_name": "atlas.terrain",
+	"texture_data": {
+		"ghoulcraft_magicmirror_blue": {
+			"textures": "textures/blocks/magicmirror_blue"
+		},
+		"ghoulcraft_magicmirror_purple": {
+			"textures": "textures/blocks/magicmirror_purple"
+		}
+	}
+}

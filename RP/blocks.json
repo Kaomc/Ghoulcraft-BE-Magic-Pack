@@ -1,0 +1,13 @@
+{
+	"format_version": [
+		1,
+		1,
+		0
+	],
+	"ghoulcraft:magicmirror_blue": {
+		"sound": "stone"
+	},
+	"ghoulcraft:magicmirror_purple": {
+		"sound": "stone"
+	}
+}
