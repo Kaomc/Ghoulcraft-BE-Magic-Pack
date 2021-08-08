@@ -1,0 +1,13 @@
+{
+	"type": "minecraftBedrock",
+	"name": "[Magic] Ghoulcraft BE",
+	"namespace": "ghoulcraft",
+	"author": "kaomc_",
+	"targetVersion": "1.17.20",
+	"description": "",
+	"capabilities": [],
+	"packs": {
+		"behaviorPack": "./BP",
+		"resourcePack": "./RP"
+	}
+}
