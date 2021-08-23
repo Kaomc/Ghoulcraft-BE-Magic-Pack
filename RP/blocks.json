@@ -9,5 +9,8 @@
 	},
 	"ghoulcraft:magicmirror_purple": {
 		"sound": "stone"
+	},
+	"ghoulcraft:alchemy1": {
+		"sound": "stone"
 	}
 }

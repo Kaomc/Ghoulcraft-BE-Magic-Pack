@@ -1,0 +1,32 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "ghoulcraft:fairy_yellow",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/fairy_yellow"
+			},
+			"geometry": {
+				"default": "geometry.fairy_yellow"
+			},
+			"render_controllers": [
+				"controller.render.fairy_yellow"
+			],
+			"spawn_egg": {
+				"texture": "ghoulcraft_fairy_yellow_egg",
+				"texture_index": 0
+			},
+			"animations": {
+				"fly": "animation.fairy.new"
+			},
+			"scripts": {
+				"animate": [
+					"fly"
+				]
+			}
+		}
+	}
+}

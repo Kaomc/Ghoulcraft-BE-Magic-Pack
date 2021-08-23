@@ -1,0 +1,45 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "ghoulcraft:alchemy1",
+			"is_experimental": false
+		},
+		"components": {
+			"minecraft:geometry": "geometry.alchemy1",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "ghoulcraft_alchemy1",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:pick_collision": {
+				"origin": [
+					-1,
+					0,
+					-1
+				],
+				"size": [
+					2,
+					2,
+					2
+				]
+			},
+			"minecraft:entity_collision": {
+				"origin": [
+					-1,
+					0,
+					-1
+				],
+				"size": [
+					2,
+					2,
+					2
+				]
+			},
+			"bridge:rotate_y_on_place": {
+				"flip": true
+			}
+		}
+	}
+}

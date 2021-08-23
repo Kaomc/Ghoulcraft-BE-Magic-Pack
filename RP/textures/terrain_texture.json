@@ -9,6 +9,9 @@
 		},
 		"ghoulcraft_magicmirror_purple": {
 			"textures": "textures/blocks/magicmirror_purple"
+		},
+		"ghoulcraft_alchemy1": {
+			"textures": "textures/blocks/alchemy1"
 		}
 	}
 }

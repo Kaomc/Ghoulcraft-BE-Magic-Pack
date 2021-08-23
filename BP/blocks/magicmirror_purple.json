@@ -1,0 +1,42 @@
+{
+  "format_version": "1.17.20",
+  "minecraft:block": {
+    "description": {
+      "identifier": "ghoulcraft:magicmirror_purple",
+      "is_experimental": false
+    },
+    "components": {
+      "minecraft:geometry": "geometry.magicmirror_purple",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "ghoulcraft_magicmirror_purple",
+          "render_method": "alpha_test"
+        }
+      },
+      "minecraft:pick_collision": {
+        "origin": [
+          -8,
+          0,
+          -8
+        ],
+        "size": [
+          16,
+          16,
+          2
+        ]
+      },
+      "minecraft:entity_collision": {
+        "origin": [
+          -8,
+          0,
+          -8
+        ],
+        "size": [
+          16,
+          16,
+          2
+        ]
+      }
+    }
+  }
+}

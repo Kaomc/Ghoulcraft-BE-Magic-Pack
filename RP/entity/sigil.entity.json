@@ -1,0 +1,27 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "ghoulcraft:sigil",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/sigil"
+			},
+			"geometry": {
+				"default": "geometry.sigil"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"spawn_egg": {
+				"base_color": "#41eedc",
+				"overlay_color": "#3a3aa9"
+			},
+			"animations": {
+				"base": "animation.sigil.base"
+			}
+		}
+	}
+}

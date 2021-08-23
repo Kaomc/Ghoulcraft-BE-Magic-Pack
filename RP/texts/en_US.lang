@@ -5,3 +5,8 @@ tile.ghoulcraft:magicmirror_purple.name=Purple Magic Mirror
 
 entity.ghoulcraft:crow.name=Crow
 item.spawn_egg.entity.ghoulcraft:crow.name=Spawn Crow
+tile.ghoulcraft:alchemy1.name=Alembic
+
+item.spawn_egg.entity.ghoulcraft:sigil.name=Red Sigil
+item.spawn_egg.entity.ghoulcraft:fairy_yellow.name=Spawn Yellow Fairy
+entity.ghoulcraft:fairy_yellow.name=Yellow Fairy
