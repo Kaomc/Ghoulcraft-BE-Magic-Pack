@@ -1,0 +1,47 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "pa:sofalred",
+			"is_experimental": false
+		},
+		"components": {
+			"minecraft:geometry": "geometry.pa_sofalred",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "pa_sofalred",
+					"render_method": "blend"
+				}
+			},
+			"minecraft:entity_collision": {
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					1,
+					16
+				]
+			},
+			"minecraft:pick_collision": {
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					1,
+					16
+				]
+			},
+			"minecraft:block_light_emission": 0,
+			"minecraft:block_light_absorption": 0,
+			"bridge:rotate_y_on_place": {
+				"flip": true
+			}
+		}
+	}
+}

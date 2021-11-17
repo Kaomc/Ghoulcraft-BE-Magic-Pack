@@ -1,0 +1,164 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:block": {
+    "description": {
+      "identifier": "pa:sofamred",
+      "category": "Nature",
+      "properties": {
+        "block:rotation": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      }
+    },
+    "components": {
+      "minecraft:loot": "loot_tables/blocks/pa_sofamred.json",
+      "minecraft:destroy_time": 0.3,
+      "minecraft:friction": 0.7,
+      "minecraft:map_color": "#FFFFFF",
+      "minecraft:explosion_resistance": 1.0,
+      "minecraft:block_light_absorption": 0.0,
+      "minecraft:block_light_emission": 0.0,
+      "minecraft:on_player_placing": {
+        "event": "update_rotation"
+      },
+      "minecraft:on_placed": {
+        "event": "size:block",
+        "target": "self"
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "pa_sofamred",
+          "render_method": "blend"
+        }
+      },
+      "minecraft:geometry": "geometry.pa_sofamred",
+      "minecraft:pick_collision": {
+        "origin": [
+          -8.0,
+          0,
+          -8.0
+        ],
+        "size": [
+          16,
+          16,
+          16
+        ]
+      },
+      "minecraft:entity_collision": false,
+      "minecraft:on_player_destroyed": {
+        "event": "remove:block",
+        "target": "self"
+      },
+      "minecraft:on_step_on": {
+        "event": "step:on",
+        "target": "self"
+      },
+      "minecraft:on_step_off": {
+        "event": "step:off",
+        "target": "self"
+      },
+      "minecraft:random_ticking": {
+        "on_tick": {
+          "event": "random:tick",
+          "target": "self"
+        }
+      },
+      "minecraft:ticking": {
+        "looping": true,
+        "range": [
+          10,
+          10
+        ],
+        "on_tick": {
+          "event": "on_tick",
+          "target": "self"
+        }
+      }
+    },
+    "permutations": [
+      {
+        "condition": "query.block_property('block:rotation') == 2",
+        "components": {
+          "minecraft:rotation": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      {
+        "condition": "query.block_property('block:rotation') == 3",
+        "components": {
+          "minecraft:rotation": [
+            0,
+            -180,
+            0
+          ]
+        }
+      },
+      {
+        "condition": "query.block_property('block:rotation') == 4",
+        "components": {
+          "minecraft:rotation": [
+            0,
+            90,
+            0
+          ]
+        }
+      },
+      {
+        "condition": "query.block_property('block:rotation') == 5",
+        "components": {
+          "minecraft:rotation": [
+            0,
+            -90,
+            0
+          ]
+        }
+      }
+    ],
+    "events": {
+      "update_rotation": {
+        "set_block_property": {
+          "block:rotation": "query.cardinal_facing_2d"
+        }
+      },
+      "size:block": {
+        "run_command": {
+          "command": []
+        }
+      },
+      "remove:block": {
+        "run_command": {
+          "command": []
+        }
+      },
+      "step:on": {
+        "run_command": {
+          "command": []
+        }
+      },
+      "step:off": {
+        "run_command": {
+          "command": []
+        }
+      },
+      "random:tick": {
+        "run_command": {
+          "command": []
+        }
+      },
+      "on_tick": {
+        "run_command": {
+          "command": []
+        }
+      }
+    }
+  }
+}

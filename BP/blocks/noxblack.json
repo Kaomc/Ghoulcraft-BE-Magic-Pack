@@ -1,0 +1,52 @@
+{
+	"format_version": "1.16.200",
+	"minecraft:block": {
+		"description": {
+			"identifier": "noxcarpet:black"
+		},
+		"components": {
+			"minecraft:geometry": "geometry.noxblack",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "black",
+					"render_method": "blend"
+				}
+			},
+			"minecraft:block_light_emission": 0,
+			"minecraft:block_light_absorption": 0,
+			"minecraft:destroy_time": 0,
+			"minecraft:explosion_resistance": 0,
+			"minecraft:flammable": {
+				"burn_odds": 30,
+				"flame_odds": 30
+			},
+			"minecraft:entity_collision": {
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					1,
+					16
+				]
+			},
+			"minecraft:pick_collision": {
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					1,
+					16
+				]
+			},
+			"bridge:rotate_y_on_place": {
+				"flip": false
+			}
+		}
+	}
+}
